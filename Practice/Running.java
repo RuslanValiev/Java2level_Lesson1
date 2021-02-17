@@ -1,5 +1,5 @@
 package Practice;
 
-public interface Runing {
+public interface Running {
     void Run();
 }
