@@ -1,5 +1,5 @@
 package Practice;
 
-public interface Jump {
+public interface Jumping {
     void Jump();
 }

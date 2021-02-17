@@ -1,6 +1,6 @@
 package Practice;
 
-public class Robot implements Run, Jump{
+public class Robot implements Runing, Jumping{
 
     private int canRun = 200;
     private int canJump = 20;

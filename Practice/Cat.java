@@ -1,6 +1,6 @@
 package Practice;
 
-public class Cat implements Run, Jump{
+public class Cat implements Runing, Jumping{
 
     private int canRun = 150;
     private int canJump = 15;

@@ -1,6 +1,6 @@
 package Practice;
 
-public class Human implements Run, Jump {
+public class Human implements Runing, Jumping {
 
     private int canRun = 100;
     private int canJump = 10;
