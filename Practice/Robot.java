@@ -1,9 +1,14 @@
 package Practice;
 
-public class Robot implements Running, Jumping{
+public class Robot implements Participants{
 
     private int canRun = 200;
     private int canJump = 20;
+
+    public Robot(int canRun, int canJump) {
+        this.canRun = canRun;
+        this.canJump = canJump;
+    }
 
     @Override
     public void Jump() {
