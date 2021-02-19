@@ -9,11 +9,16 @@ public class Test {
                 new Robot("Alfa",  20, 5)};
 
         Obstacle[] obstacles = {
-                new Wall(3),
+                new Wall(2),
                 new Treadmill(18)};
 
         for (int i = 0; i < obstacles.length; i++) {
             if (obstacles[i] instanceof Treadmill) {
+                for (int j = 0; j < participants.length; j++) {
+                    obstacles[i].passTheTest(participants[j]);
+                }
+            }
+            if (obstacles[i] instanceof Wall){
                 for (int j = 0; j < participants.length; j++) {
                     obstacles[i].passTheTest(participants[j]);
                 }

@@ -1,6 +1,7 @@
 package Practice;
 
 public class Cat implements Participants{
+    boolean ready = true;
     String name;
     private int canRun;
     private int canJump;
@@ -9,6 +10,16 @@ public class Cat implements Participants{
         this.name = name;
         this.canRun = canRun;
         this.canJump = canJump;
+    }
+
+    @Override
+    public boolean getReady() {
+        return ready;
+    }
+
+    @Override
+    public boolean setReady() {
+        return ready = false;
     }
 
     @Override

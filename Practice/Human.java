@@ -1,6 +1,7 @@
 package Practice;
 
 public class Human implements Participants {
+    boolean ready = true;
     String name;
     private int canRun;
     private int canJump;
@@ -10,6 +11,16 @@ public class Human implements Participants {
         this.name = name;
         this.canRun = canRun;
         this.canJump = canJump;
+    }
+
+    @Override
+    public boolean getReady() {
+        return ready;
+    }
+
+    @Override
+    public boolean setReady() {
+        return ready = false;
     }
 
     public String getName() {
