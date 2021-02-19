@@ -1,11 +1,29 @@
 package Practice;
 
 public class Robot implements Participants{
+    String name;
+    private int canRun;
+    private int canJump;
 
-    private int canRun = 200;
-    private int canJump = 20;
+    @Override
+    public String getName() {
+        return name;
+    }
 
-    public Robot(int canRun, int canJump) {
+    @Override
+    public int getCanRun() {
+        return canRun;
+    }
+
+    @Override
+    public int getCanJump() {
+        return canJump;
+    }
+
+
+
+    public Robot(String name, int canRun, int canJump) {
+        this.name = name;
         this.canRun = canRun;
         this.canJump = canJump;
     }

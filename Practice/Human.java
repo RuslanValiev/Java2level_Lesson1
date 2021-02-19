@@ -1,13 +1,19 @@
 package Practice;
 
 public class Human implements Participants {
+    String name;
+    private int canRun;
+    private int canJump;
 
-    private int canRun = 100;
-    private int canJump = 10;
 
-    public Human(int canRun, int canJump) {
+    public Human(String name, int canRun, int canJump) {
+        this.name = name;
         this.canRun = canRun;
         this.canJump = canJump;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getCanRun() {
